@@ -1,0 +1,140 @@
+footer {
+  width: 100%;
+  padding: 80px 135px;
+  background: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between; 
+}
+
+.footer_email_address {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer_email_address h1 {
+  font-size: 24px;
+  color: white;
+}
+
+.footer_email_address h3 {
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+}
+
+.footer_email_address span {
+  font-size: 16px;
+  color: white;
+}
+
+.footer_form{
+  width: 217px;
+  background: transparent;
+  border: 1.5px solid #FAFAFA;
+  border-radius: 5px;
+  padding: 16px 12px;
+}
+
+.footer_form input{
+  width: 130px;
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+
+.footer_form button{
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  margin-left: 34px;
+}
+
+.footer_form i{
+  color: white;
+  font-size: 16px;
+}
+
+.footer_support{
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.footer_support span{
+  color: white;
+  font-size: 16px;
+}
+
+.footer_support h1{
+    color: white;
+    font-size: 20px;
+}
+
+.footer_account h1{
+  font-size: 20px;
+  color: white;
+  margin-bottom: 24px;
+}
+
+.footer_account ul,
+.footer_links ul{
+  display: flex;
+  flex-direction: column;
+  gap:16px;
+}
+
+.footer_account li,
+.footer_links li{
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.footer_account li a,
+.footer_links li a{
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.footer_links h1{
+  font-size: 20px;
+  color: white;
+  margin-bottom: 24px;
+}
+
+.footer_apps h1{
+  font-size: 20px;
+  color: white;
+  margin-bottom: 24px;
+}
+
+.footer_apps span{
+  font-size: 12px;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.footer_app_pay {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+} 
+
+.btn_pay{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_application{
+  display: flex;
+  gap: 30px;
+  padding-top: 24px;
+}
+
+.footer_application i{
+  color: white;
+  font-size: 20px;
+}
