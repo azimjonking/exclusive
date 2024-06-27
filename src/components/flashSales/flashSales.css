@@ -1,0 +1,226 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
+.flashSales {
+    width: 100%;
+    padding: 130px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.flashSales-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.red-box {
+    width: 20px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #DB4444;
+}
+
+.flashSales-text {
+    font-size: 16px;
+    color: #DB4444;
+    font-weight: bold;
+}
+
+.flashSales-header {
+    padding-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.flashSales-header h1 {
+    flex: 2;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 4px;
+    font-weight: 500;
+}
+
+.time-content {
+    flex: 5;
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+}
+
+.time-content .time {
+    display: flex;
+    flex-direction: column;
+}
+
+.time .number {
+    color: #000;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.time .number span {
+    color: #DB4444;
+}
+
+.time .text {
+    color: #000;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 12px;
+}
+
+.flashSales-icons {
+    display: flex;
+    column-gap: 15px;
+}
+
+.flashSales-icons .fa-solid:hover {
+    color: #DB4444;
+}
+
+.flashSales-icons .fa-solid {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.flashSales-products {
+    padding-top: 40px;
+    display: flex;
+    column-gap: 30px;
+}
+
+.flashSales-products .flashSales-product {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.flashSales-products .flashSales-product-img {
+    cursor: pointer;
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+}
+
+.flashSales-products .flashSales-product img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    background: #eee;
+}
+
+.flashSales-products .flashSales-product:hover img {
+    transform: scale(1.1);
+    transition: all 0.4s ease-in-out;
+}
+
+.flashSales-products .flashSales-product .flashSales-product-text {
+    width: 100%;
+    position: absolute;
+    bottom: 90px;
+    left: 0;
+    text-align: center;
+    background: #000;
+    padding: 10px 15px;
+    color: #fff;
+    transform: translateY(100%);
+    transition: transform 0.4s ease-in-out;
+}
+
+.flashSales-products .flashSales-product:hover .flashSales-product-text {
+    transform: translateY(0);
+}
+
+.flashSales-products .flashSales-product .flashSales-product-text a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.flashSales-products .flashSales-product .flashSales-icons h5 {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: #DB4444;
+    padding: 3px 10px;
+    border-radius: 2px;
+}
+
+.flashSales-products .flashSales-product .flashSales-icons .fa-heart {
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    color: #000;
+    font-size: 15px;
+    background-color: #fff;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.flashSales-products .flashSales-product .flashSales-icons .fa-heart:hover {
+    color: #fff;
+    background-color: #DB4444;
+}
+
+.flashSales-products .flashSales-product .flashSales-icons .fa-eye {
+    position: absolute;
+    top: 45px;
+    right: 13px;
+    color: #000;
+    font-size: 15px;
+    background-color: #fff;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.flashSales-products .flashSales-product .flashSales-icons .fa-eye:hover {
+    color: #fff;
+    background-color: #DB4444;
+}
+
+.flashSales-products .flashSales-product .price h3 {
+    padding-top: 16px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.flashSales-products .flashSales-product .price span {
+    padding-top: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #DB4444;
+}
+
+.flashSales-products .flashSales-product .ratting {
+    padding-top: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    color: #FFAD33;
+}
