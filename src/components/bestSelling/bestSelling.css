@@ -1,0 +1,14 @@
+.selling{
+     width: 100%;
+
+}
+.selling-header_info{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+}
+.section_bottom_box{
+     display: flex;
+     flex: wrap;
+     border:  2px solid black;
+}
