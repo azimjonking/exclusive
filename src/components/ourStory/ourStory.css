@@ -1,0 +1,37 @@
+
+
+.ourStory {
+    display: flex;
+    padding: 150px 8%;
+    gap: 70px;
+}
+
+
+.ourStory-text {
+    margin-top: 170px;
+}
+
+.ourStory-text h1 {
+    font-size: 45px;
+}
+
+.ourStory-text p {
+    font-size: 19px;
+}
+
+.ourStory-text p:nth-child(2) {
+    margin-top: 30px;   
+    width: 510px;
+
+}
+
+.ourStory-text p:nth-child(3) {
+    margin-top: 20px;
+}
+
+.ourStory-img {
+    margin-left: 20%;   
+}
+.ourStory-img img {
+    width: 600px;
+}
