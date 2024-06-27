@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.contact{
+    width: 100%;
+    height: 130vh;
+    background-color: #fff;
+    padding: 100px;
+}
+
+.contact p{
+    color: #00000051;
+}
+
+.contact p span{
+    color: #00000051;
+}
+
+.contact p .con{
+    color: #000;
+}
+
+.contact .wrapper{
+    width: 1320px;
+    height: 550px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 130px;
+}
+
+.contact .wrapper .left-wrap{
+    width: 35%;
+    height: 100%;
+    background-color: #F5F5F5;
+    padding: 50px; 
+    box-shadow: 5px 10px 15px 15px #999595;
+    border-radius: 8px;
+}
+
+.contact .wrapper .left-wrap .span{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DB4444;
+    position: relative;
+}
+
+.contact .wrapper .left-wrap .span h2{
+    position: absolute;
+    left: 50px;
+}
+
+.contact .wrapper .left-wrap .call .span i{
+    font-size: 18px;
+    color: #fff;
+}
+
+.conatct .wrapper .left-wrap .call{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conatct .wrapper .left-wrap .call .btn{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact .wrapper .left-wrap button{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DB4444;
+}
+
+.contact .wrapper .left-wrap button i{
+    font-size: 18px;
+    color: #fff;
+}
+
+.contact .wrapper .left-wrap p{
+    color: #000;
+}
+
+
+.contact .wrapper .right-wrap{
+    width: 60%;
+    height: 100%;
+    flex-direction: column;
+    box-shadow: 5px 10px 15px 15px #999595;
+    border-radius: 8px;
+}
+
+.contact .wrapper .right-wrap .trio{
+    width: 98%;
+    margin-top: 10px;
+    margin-left: 8px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact .wrapper .right-wrap .trio input{
+    width: 30%;
+    height: 100%;
+    background-color: #F5F5F5;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-indent: 5px;
+}
+
+.contact .wrapper .right-wrap > textarea{
+    width: 98%;
+    height: 400px;
+    background-color: #F5F5F5;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 8px;
+    text-indent: 10px;
+}
+
+.contact .wrapper .right-wrap > button{
+    width: 200px;
+    height: 50px;
+    background-color: #DB4444;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-left: 585px;
+    margin-top: 18px;
+    transition: 0.3s;
+}
+
+.contact .wrapper .right-wrap > button:hover{
+    width: 200px;
+    height: 50px;
+    background-color: #db4444ef;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-left: 585px;
+    margin-top: 18px;
+}
