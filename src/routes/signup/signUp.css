@@ -1,0 +1,200 @@
+
+.signup-section button {
+    cursor: pointer;
+}
+
+.signup-section {
+    position: relative;
+    top: 2rem;
+    width: 100%;
+    height: auto;
+}
+
+.signup-section  img {
+    width: 50%;
+    height: 60%;
+    font-size: 20px;
+}
+
+.signup-form {
+    width: 20%;
+    position: relative;
+    top: -30rem;
+    left: 60%;
+}
+
+.signup-form h1 {
+    position: absolute;
+    top: -6rem;
+    width: 339px;
+    height: 30px;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    padding-bottom: -10px;
+}
+
+.signup-form h4 {
+    position: relative;
+    top: -2rem;
+    width: 191px;
+    height: 24px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.signup-form form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+}
+
+.signup-form .name-input {
+    position: relative;
+    top: -0.6rem; 
+    width: 400px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000;
+}
+
+.signup-form .email-input {
+    width: 400px;
+    position: relative;
+    top: 0.1rem;
+    height: 60px;
+    padding-top: 1.5rem;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000;
+}
+
+
+.signup-form .password-input {
+    position: relative;
+    bottom: -0.6rem;
+    width: 400px;
+    height: 60px;
+    padding-top: 1.5rem;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000;
+}
+
+.login-link {
+    position: absolute;
+    width: 215px;
+    height: 24px;
+    top: 29.4rem;
+    left: 5.9rem;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    display: flex;
+    gap: 13px;        
+}
+
+.login-link .login {
+    width: 55px;
+    height: 24px;
+    gap: 0px;
+    opacity: 0.7px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    color: #000000;
+    text-decoration: none;        
+}
+
+.login:hover {
+    font-size: 19px;
+    transition: 0.4 ease;
+}
+
+.login:active {
+    color: #575454;
+}
+
+.signup-btn {
+    position: absolute;
+    top: 18rem;
+    width: 400px;
+    height: 50px;
+    background: #DB4444;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 3px;
+}
+
+.signup-btn:hover {
+    background: #f03e3e;
+    transition: 0.3 ease;
+}
+
+.signup-btn:active {
+    background: #ea6060;
+}
+
+.signup-google-btn {
+    position: absolute;
+    top: 24rem;
+    width: 400px;
+    height: 50px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.signup-google-btn:active {
+    background: #cbc9c9;
+}
+
+#signup-google-icon {
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+background: rgb(3,174,193);
+    background: linear-gradient(90deg, rgba(3,174,193,1) 0%, rgba(223,200,76,1) 35%, rgba(147,0,255,1) 100%); */

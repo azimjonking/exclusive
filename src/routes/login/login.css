@@ -1,0 +1,108 @@
+
+
+.login-section {
+    position: relative;
+    top: 3rem;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+
+}
+
+.login-img img {
+    width: 50%;
+    height: 60%;
+    font-size: 20px;
+}
+
+.login-form {
+    width: 20%;
+    position: relative;
+    top: -30rem;
+    left: 57%;
+}
+
+.login-form h1 {
+    position: absolute;
+    top: -6rem;
+    width: 339px;
+    height: 30px;
+    font-size: 36px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    padding-bottom: -10px;
+}
+
+.login-form h4 {
+    position: relative;
+    top: -2rem;
+    width: 191px;
+    height: 24px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.login-form .email-input {
+    width: 400px;
+    position: relative;
+    top: -1.3rem;
+    height: 60px;
+    padding-top: 1.5rem;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000;
+}
+
+
+.login-form .password-input {
+    position: relative;
+    bottom: 1rem;
+    width: 400px;
+    height: 60px;
+    padding-top: 1.5rem;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000;
+}
+
+
+.register {
+    position: relative;
+    top: 2rem;
+    width: 400px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.register .login-btn {
+    width: 143px;
+    height: 46px;
+    padding: 16px 48px 16px 48px;
+    gap: 10px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    background: #DB4444;
+    color: #fff;
+}
+
+.register .reset-password {
+    position: relative;
+    right: -27px;
+    width: 141px;
+    float: right;
+    height: 24px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #DB4444;
+}
