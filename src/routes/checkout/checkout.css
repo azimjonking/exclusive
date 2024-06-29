@@ -1,0 +1,82 @@
+.checkout{
+    display: flex;
+    font-display: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10rem;
+}
+.details{
+    color: black;
+    text-decoration: none;
+}
+h1{
+    font-size: 2rem;
+}
+form{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+hr{
+    width: 29rem;
+    margin-top: 23px;
+}
+form input{
+width: 470px;
+height: 40px;
+background: #f6f4f4dd;
+border: none;
+outline: none;
+}
+form span{
+    margin-top: 20px;
+}
+.lcd{
+    display: flex;
+}
+.lcd h3{
+padding: 2px 14rem;    
+}
+.gamepad{
+ display: flex;
+}
+.gamepad h3{
+    padding: 2px 14rem;
+}
+.next div{ 
+    display: flex;
+    justify-content: space-between;
+}
+.next h3{
+    padding-right: 14rem;
+}
+label{
+    display: flex;
+    align-items: center;
+}
+label img{
+    height: 8vh; 
+    padding-left:10.5rem;
+}
+.btn1{
+    width: 98px;
+    height: 34px;
+    background: #DB4444;
+    color: white;
+    margin-left:12px;
+}
+.btn2{
+    width: 98px;
+    height: 34px;
+    background: #DB4444;
+    color: white;
+    margin-top: 12px;
+}
+.code{
+    height: 34px;
+}
+@media (max-width:1220px){
+    .media{
+        padding-left: 12rem;
+    }
+
+}
