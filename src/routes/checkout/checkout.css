@@ -12,7 +12,7 @@
 h1{
     font-size: 2rem;
 }
-form{
+.checkout_form{
     display: grid;
     grid-template-columns: 1fr;
 }
@@ -20,14 +20,14 @@ hr{
     width: 29rem;
     margin-top: 23px;
 }
-form input{
+.checkout_form input{
 width: 470px;
 height: 40px;
 background: #f6f4f4dd;
 border: none;
 outline: none;
 }
-form span{
+.checkout_form span{
     margin-top: 20px;
 }
 .lcd{
