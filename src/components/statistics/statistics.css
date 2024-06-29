@@ -12,13 +12,19 @@
     height: 230px;
     border:  2px solid #867b7b;
     border-radius: 5px;
-    transition: all 0.3s;
+    transition: all 0.6s;
 }
 
+.statistics-card:hover {
+    background: #DB4444;
+    color: white;
+}
 
 .statistics-img {
     margin-top: 30px;
 }
+
+
 
 .statistics-text,
 .statistics-hover {
@@ -35,22 +41,3 @@
 
 }
 
-.statistics-hover-card {
-    background: #DB4444;
-    width: 50%;
-    height: 230px;
-    border-radius: 5px;
-}
-
-
-.statistics-hover h1 {
-    font-size: 35px;
-    color: #FFFFFF;
-}
-
-.statistics-hover p {
-    color: #FFFFFF;
-    margin-top: 10px;
-    font-size: 18px;
-
-}

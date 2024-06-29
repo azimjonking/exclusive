@@ -5,6 +5,7 @@ import statisticsImg2 from './Services (1).png'
 import statisticsImg3 from './Services (2).png'
 import statisticsImg4 from './Services (3).png'
 
+
 const Statistics = () => {
   return (
     <section className='statistics'>
@@ -21,13 +22,13 @@ const Statistics = () => {
         </div>
       </div>
       
-      <div className="statistics-hover-card">
+      <div className="statistics-card">
 
         <div className="statistics-img">
           <img src={statisticsImg2} alt="statisticsImg2" />
         </div>
 
-        <div className="statistics-hover">
+        <div className="statistics-text">
           <h1>33k</h1>
           <p>Mopnthly Produduct Sale</p>
         </div>
