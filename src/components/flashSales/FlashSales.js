@@ -1,5 +1,7 @@
 import React from "react";
 import "./flashSales.css";
+import "./flashSalesData";
+import flashSalesData from "./flashSalesData";
 
 const FlashSales = () => {
   return (
@@ -34,120 +36,48 @@ const FlashSales = () => {
             <span className="number">45</span>
           </div>
         </div>
-        <div className="flashSales-icons">
+        <div className="flashSales-header-icons">
           <i className="fa-solid fa-arrow-left"></i>
           <i className="fa-solid fa-arrow-right"></i>
         </div>
       </div>
       <div className="flashSales-products">
-        <div className="flashSales-product">
-          <div className="flashSales-product-img">
-          <img
-            src="https://www.pngall.com/wp-content/uploads/15/PS5-Controller.png"
-            alt="controller"
-          /></div>
-          <div className="flashSales-product-text">
-            <a href="#">Add to cart</a>
-          </div>
-          <div className="flashSales-icons">
-            <h5>-40%</h5>
-            <i className="fa-regular fa-heart"></i>
-            <i className="fa-regular fa-eye"></i>
-          </div>
-          <div className="price">
-            <h3>HAVIT HV-G92 Gamepad</h3>
-            <span>$210</span>
-          </div>
-          <div className="ratting">
-            <i className="fa-solid fa-star"></i>
-            <i className="fa-solid fa-star"></i>
-            <i className="fa-solid fa-star"></i>
-            <i className="fa-solid fa-star"></i>
-            <i className="fa-solid fa-star"></i>
-          </div>
-          
-        </div>
-        <div className="flashSales-product">
-        <div className="flashSales-product-img">
-          <img
-            src="https://cherryxtrfy.com/wp/wp-content/uploads/2022/02/123.png"
-            alt="keyboard"
-          /></div>
-          <div className="flashSales-product-text">
-            <a href="#">Add to cart</a>
-          </div>
-          <div className="flashSales-icons">
-            <h5>-35%</h5>
-            <i className="fa-regular fa-heart"></i>
-            <i className="fa-regular fa-eye"></i>
-          </div>
-          <div className="price">
-            <h3>AK-900 Wired Keyboard</h3>
-            <span>$960</span>
-          </div>
-          <div className="ratting">
-            <i className="fa-solid fa-star"></i>
-            <i className="fa-solid fa-star"></i>
-            <i className="fa-solid fa-star"></i>
-            <i className="fa-solid fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-          </div>
-          
-        </div>
-        <div className="flashSales-product">
-        <div className="flashSales-product-img">
-          <img
-            src="https://png.pngtree.com/png-vector/20231018/ourmid/pngtree-curve-screen-gaming-monitor-device-png-image_10206079.png"
-            alt="tv"
-          /></div>
-          <div className="flashSales-product-text">
-            <a href="#">Add to cart</a>
-          </div>
-          <div className="flashSales-icons">
-            <h5>-30%</h5>
-            <i className="fa-regular fa-heart"></i>
-            <i className="fa-regular fa-eye"></i>
-          </div>
-          <div className="price">
-            <h3>IPS LCD Gaming Monitor</h3>
-            <span>$210</span>
-          </div>
-          <div className="ratting">
-            <i className="fa-solid fa-star"></i>
-            <i className="fa-solid fa-star"></i>
-            <i className="fa-solid fa-star"></i>
-            <i className="fa-solid fa-star"></i>
-            <i className="fa-solid fa-star"></i>
-          </div>
-          
-        </div>
-        <div className="flashSales-product">
-        <div className="flashSales-product-img">
-          <img
-            src="https://sminteriorstudio.com/wp-content/uploads/2021/08/catalog2.png"
-            alt="chair"
-          /></div>
-          <div className="flashSales-product-text">
-            <a href="#">Add to cart</a>
-          </div>
-          <div className="flashSales-icons">
-            <h5>-25%</h5>
-            <i className="fa-regular fa-heart"></i>
-            <i className="fa-regular fa-eye"></i>
-          </div>
-          <div className="price">
-            <h3>S-Series Comfort Chair</h3>
-            <span>$375</span>
-          </div>
-          <div className="ratting">
-            <i className="fa-solid fa-star"></i>
-            <i className="fa-solid fa-star"></i>
-            <i className="fa-solid fa-star"></i>
-            <i className="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star-half-stroke"></i>
-          </div>
-          
-        </div>
+        {flashSalesData.map((product, index) => {
+          return (
+            <div key={index} className="flashSales-product">
+              <div className="flashSales-product-overlay">
+              <div className="flashSales-product-img">
+                <img src={product.img} />
+              </div>
+              <div className="flashSales-product-text">
+                <a href="#">Add to cart</a>
+              </div>
+              </div>
+              <div className="flashSales-icons">
+                <h5>{product.discount}</h5>
+                <i className="fa-regular fa-heart"></i>
+                <i className="fa-regular fa-eye"></i>
+              </div>
+              <div className="price">
+                <h3>{product.name}</h3>
+                <span className="newPrice">{product.newPrice}</span>
+                <span className="oldPrice">{product.oldPrice}</span>
+              </div>
+              <div className="ratting">
+                <i className={product.ratting}></i>
+                <i className={product.ratting}></i>
+                <i className={product.ratting}></i>
+                <i className={product.ratting}></i>
+                <i className={product.ratting}></i>
+                <span className="ratting-numbers">{product.rattingNumbers}</span>
+              </div>
+              
+            </div>
+          );
+        })}
+      </div>
+      <div className="flashSales-button">
+      <a href="#" >View All Products</a>
       </div>
     </section>
   );
