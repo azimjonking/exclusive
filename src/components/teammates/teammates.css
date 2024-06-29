@@ -11,6 +11,8 @@
     gap: 30px;
 }
 
+
+
 .teammates-card > .teammates-text h1  {
     font-size: 30px;
 }
@@ -26,6 +28,17 @@
     margin-top: 20px;
 }
 
-.teammates-card > .teammates-text  > .teammates-icon i {
+.teammates-card > .teammates-text  > .teammates-icon a {
     font-size: 18px;
+    text-decoration: none;
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+.teammates-card > .teammates-text  > .teammates-icon a:hover {
+    color: #DB4444;
+}
+
+.teammates-card > .teammates-text  > .teammates-icon a:active {
+    color: #000;
 }
