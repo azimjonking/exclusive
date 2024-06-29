@@ -26,6 +26,7 @@ nav h1 {
 .nav_links li {
   text-decoration: none;
   list-style-type: none;
+  transition: all ease 0.2s;
 }
 
 .nav_links li a {
@@ -33,6 +34,10 @@ nav h1 {
   text-decoration: none;
   font-size: 16px;
 }
+
+/* .nav_links li:hover {
+  transform: translateY(-4px);
+} */
 
 .nav_btn {
   display: flex;
@@ -57,7 +62,16 @@ nav h1 {
   outline: none;
 }
 
+.nav_search i {
+  cursor: pointer;
+}
+
 .nav_btn a > i {
   font-size: 20px;
   color: black;
+}
+
+.nav_links li a.active {
+  /* color: #ff6347; */
+  border-bottom: 2px solid black;
 }

@@ -1,23 +1,54 @@
-import React from "react";
+import React, { useState } from "react";
 import "./navbar.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
+  const location = useLocation();
+  const [activeLink, setActiveLink] = useState(location.pathname);
+
+  const handleLinkClick = (path) => {
+    setActiveLink(path);
+  };
+
   return (
     <nav>
       <h1>Exclusive</h1>
       <ul className="nav_links">
         <li>
-          <Link to="/">Home</Link>
+          <Link
+            to="/"
+            className={activeLink === "/" ? "active" : ""}
+            onClick={() => handleLinkClick("/")}
+          >
+            Home
+          </Link>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <Link
+            to="/about"
+            className={activeLink === "/about" ? "active" : ""}
+            onClick={() => handleLinkClick("/about")}
+          >
+            About
+          </Link>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <Link
+            to="/contact"
+            className={activeLink === "/contact" ? "active" : ""}
+            onClick={() => handleLinkClick("/contact")}
+          >
+            Contact
+          </Link>
         </li>
         <li>
-          <Link to="/signup">Sign Up</Link>
+          <Link
+            to="/signup"
+            className={activeLink === "/signup" ? "active" : ""}
+            onClick={() => handleLinkClick("/signup")}
+          >
+            Sign Up
+          </Link>
         </li>
       </ul>
       <div className="nav_btn">

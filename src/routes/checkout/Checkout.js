@@ -16,7 +16,7 @@ const Checkout = () => {
         <a href="#">CheckOut</a>
        </span>
         <h1>Billing Details</h1>
-        <form action="#">
+        <form className='checkout_form'>
          <span>First Name*</span>
          <input type="text" />
          <span>Company Name</span>
