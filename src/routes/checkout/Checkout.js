@@ -8,7 +8,7 @@ const Checkout = () => {
     <section className='checkout'>
 
       <div className='details'>
-       <span>
+       <span className='a'>
        <a href="#">Account</a> /
         <a href="#">My Account</a> /
         <a href="#">Product</a>/
@@ -32,7 +32,7 @@ const Checkout = () => {
         <span>Email Address*</span>
         <input type="email" />
         </form>
-       <label htmlFor="#"> <input type="checkbox" /> Save this information for faster check-out next time</label>
+       <label htmlFor="#"> <input type="checkbox" /> <span className='span'>Save this information for faster check-out next time</span></label>
       </div>
       <div className='media'>
         <div className='lcd'>
@@ -65,19 +65,19 @@ const Checkout = () => {
 
           </div>
          </div>
-          <label>
-          <input type="radio"  name='payment' value="bank"/> Bank
+          <label >
+          <input type="radio"  name='payment' value="bank"/> <span>Bank</span>
           <img src={img3} alt="" />
         </label>
-        <label>
-        <input type="radio"  name='payment' value="bank"/> Cash on delivery
-
+        <label className='radio-2'>
+        <input  type="radio"  name='payment' value="bank"/> <span>Cash on delivery
+        </span>
         </label>
         <input className='code' type="text"  placeholder='Coupon Code'/>
         <button className='btn1'>Apply Coupon</button>
         </div>
         <button className='btn2'>Order</button>
-      </div>
+      </div>    
     </section>
   )
 }
