@@ -7,17 +7,19 @@ import Recommend from '../../components/recommend/Recommend'
 import OurProducts from '../../components/ourProducts/OurProducts'
 import Featured from '../../components/featured/Featured'
 import Service from '../../components/service/Service'
+import HomeCategory from '../../components/homeCategory/HomeCategory'
 
 const Home = () => {
   return (
     <div>
-      <FlashSales />
+      <HomeCategory/>
+      {/* <FlashSales />
       <Categories />
       <BestSelling />
       <Recommend />
       <OurProducts />
       <Featured />
-      <Service />
+      <Service /> */}
     </div>
   )
 }

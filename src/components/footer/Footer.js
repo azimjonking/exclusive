@@ -15,7 +15,7 @@ const Footer = () => {
         <form className="footer_form">
           <input type="text" placeholder="Enter your email" />
           <button>
-            <i class="fa-regular fa-paper-plane"></i>
+            <i className="fa-regular fa-paper-plane"></i>
           </button>
         </form>
       </div>

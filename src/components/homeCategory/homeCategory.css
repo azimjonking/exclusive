@@ -1,0 +1,27 @@
+.home-links{
+    border-right: 2px solid #ECECEC;
+    padding: 40px 24px 0 135px;
+}
+
+.home-links ul{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    list-style: none;
+}
+
+.home-links ul li{
+    display: flex;
+    gap: 60px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-links ul li i{
+    font-size: 14px;
+}
+
+.home-links ul li > a{
+    color: black;
+    font-size: 16px;
+}

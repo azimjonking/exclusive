@@ -1,19 +1,32 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./navbar.css";
 import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const location = useLocation();
   const [activeLink, setActiveLink] = useState(location.pathname);
+  const [isMobile, setIsMobile] = useState(false);
+
+  const handleMobileBtnClick = () => {
+    setIsMobile(!isMobile);
+  };
 
   const handleLinkClick = (path) => {
     setActiveLink(path);
+    setIsMobile(false);
   };
+
+  useEffect(() => {
+    setActiveLink(location.pathname);
+  }, [location]);
 
   return (
     <nav>
-      <h1>Exclusive</h1>
-      <ul className="nav_links">
+      <Link className="nav_logo" to="/" onClick={() => handleLinkClick("/")}>
+        Exclusive
+      </Link>
+      <ul className={isMobile ? "nav_links active" : "nav_links"}>
+        <button className="close-menu" onClick={handleMobileBtnClick}><i className="fa-solid fa-xmark"></i></button>
         <li>
           <Link
             to="/"
@@ -62,6 +75,9 @@ const Navbar = () => {
         <Link>
           <i className="fa-solid fa-cart-shopping"></i>
         </Link>
+        <button className="mobile_btn" onClick={handleMobileBtnClick}>
+          <i className={isMobile ? "fa-solid fa-xmark" : "fa-solid fa-bars"}></i>
+        </button>
       </div>
     </nav>
   );
